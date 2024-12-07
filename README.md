@@ -136,7 +136,7 @@
         <p>A passionate learner and software developer</p>
 
         <!-- Link to the resume -->
-        <a href="profile.pdf" target="_blank" download="profile.pdf">
+        <a href="Profile.pdf" target="_blank" download="Profile.pdf">
           View Resume
         </a>
       </section>
