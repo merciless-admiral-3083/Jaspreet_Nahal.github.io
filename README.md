@@ -3,8 +3,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jaspreet Singh Nahal</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <style>
       body {
         font-family: "Roboto", sans-serif;
@@ -37,7 +45,8 @@
         scroll-margin-top: 70px;
       }
 
-      section h1, section h4 {
+      section h1,
+      section h4 {
         text-align: center;
         color: #6a11cb;
       }
@@ -48,17 +57,6 @@
         text-align: center;
         padding: 100px 20px;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-      }
-
-      #home img {
-        border-radius: 50%;
-        border: 5px solid #fff;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        transition: transform 0.5s ease;
-      }
-
-      #home img:hover {
-        transform: scale(1.1);
       }
 
       #home h1 {
@@ -159,11 +157,17 @@
     </style>
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Jaspreet Singh Nahal</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -183,12 +187,14 @@
         <h1>Welcome to My Portfolio</h1>
         <p>A passionate learner and software developer</p>
         <a href="#">View Resume</a>
-        <img src="WhatsApp Image 2024-05-26 at 12.50.18_72ee008f.jpg" alt="Jaspreet Singh Nahal" />
       </section>
 
       <section id="about">
         <h1>About Me</h1>
-        <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree with a keen interest in software development and open-source contributions.</p>
+        <p>
+          I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree with a
+          keen interest in software development and open-source contributions.
+        </p>
       </section>
 
       <section id="skills">
@@ -214,11 +220,23 @@
         <form>
           <div class="mb-3">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Your message"
+              required
+            ></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
