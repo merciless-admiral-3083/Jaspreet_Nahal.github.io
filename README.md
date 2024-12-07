@@ -45,8 +45,7 @@
         scroll-margin-top: 70px;
       }
 
-      section h1,
-      section h4 {
+      section h1 {
         text-align: center;
         color: #6a11cb;
       }
@@ -65,11 +64,13 @@
       }
 
       #home a {
+        display: inline-block;
         color: white;
         background: #ffcc00;
         padding: 10px 20px;
         border-radius: 25px;
         text-decoration: none;
+        font-weight: bold;
         transition: background 0.3s ease;
       }
 
@@ -81,57 +82,6 @@
       #about p {
         text-align: justify;
         font-size: 1.1rem;
-      }
-
-      /* Tech-Stack Section */
-      .tech-stack {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-      }
-
-      .tech-stack .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100px;
-        text-align: center;
-        transition: transform 0.3s ease, background 0.3s ease;
-        padding: 15px;
-        border-radius: 10px;
-        background: #f5f5f5;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .tech-stack .logo:hover {
-        transform: translateY(-10px);
-        background: #6a11cb;
-        color: white;
-      }
-
-      .tech-stack .logo img,
-      .tech-stack .logo i {
-        width: 50px;
-        height: 50px;
-      }
-
-      #contact form {
-        background: #f9f9f9;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      #contact form button {
-        background: #6a11cb;
-        border: none;
-        color: white;
-        transition: background 0.3s ease;
-      }
-
-      #contact form button:hover {
-        background: #2575fc;
       }
 
       .fade-in {
@@ -174,8 +124,6 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -186,7 +134,11 @@
       <section id="home" class="fade-in">
         <h1>Welcome to My Portfolio</h1>
         <p>A passionate learner and software developer</p>
-        <a href="#">View Resume</a>
+
+        <!-- Link to the resume -->
+        <a href="profile.pdf" target="_blank" download="profile.pdf">
+          View Resume
+        </a>
       </section>
 
       <section id="about">
@@ -195,24 +147,6 @@
           I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree with a
           keen interest in software development and open-source contributions.
         </p>
-      </section>
-
-      <section id="skills">
-        <h1>Skills</h1>
-        <div class="tech-stack">
-          <div class="logo">
-            <i class="fab fa-html5" style="color: #f4470b;"></i>
-            <span>HTML5</span>
-          </div>
-          <div class="logo">
-            <i class="fab fa-css3-alt" style="color: #2965f1;"></i>
-            <span>CSS3</span>
-          </div>
-          <div class="logo">
-            <i class="fab fa-js-square" style="color: #f0db4f;"></i>
-            <span>JavaScript</span>
-          </div>
-        </div>
       </section>
 
       <section id="contact">
