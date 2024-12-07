@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,7 +6,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
     <style>
-      /* General Styling */
       body {
         font-family: "Roboto", sans-serif;
         line-height: 1.6;
@@ -34,7 +32,6 @@
         color: #ffcc00;
       }
 
-      /* Section Styling */
       section {
         padding: 60px 20px;
         scroll-margin-top: 70px;
@@ -45,7 +42,6 @@
         color: #6a11cb;
       }
 
-      /* Home Section */
       #home {
         background: linear-gradient(135deg, #6a11cb, #2575fc);
         color: white;
@@ -84,7 +80,6 @@
         color: #ffcc00;
       }
 
-      /* About Section */
       #about p {
         text-align: justify;
         font-size: 1.1rem;
@@ -123,7 +118,6 @@
         height: 50px;
       }
 
-      /* Contact Form */
       #contact form {
         background: #f9f9f9;
         padding: 20px;
@@ -142,7 +136,6 @@
         background: #2575fc;
       }
 
-      /* Animation */
       .fade-in {
         animation: fadeIn 2s ease-in-out;
       }
@@ -156,7 +149,6 @@
         }
       }
 
-      /* Footer */
       footer {
         text-align: center;
         padding: 20px;
@@ -186,13 +178,12 @@
       </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
       <section id="home" class="fade-in">
         <h1>Welcome to My Portfolio</h1>
         <p>A passionate learner and software developer</p>
         <a href="#">View Resume</a>
-        <img src="WhatsApp Image.jpg" alt="Jaspreet Singh Nahal" />
+        <img src="WhatsApp Image 2024-05-26 at 12.50.18_72ee008f.jpg" alt="Jaspreet Singh Nahal" />
       </section>
 
       <section id="about">
@@ -234,7 +225,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
       <p>&copy; 2024 Jaspreet Singh Nahal. All Rights Reserved.</p>
     </footer>
