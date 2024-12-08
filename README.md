@@ -1,203 +1,192 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jaspreet Singh Nahal</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* General Reset */
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      color: white;
-      scroll-behavior: smooth;
-    }
-
-    /* Navigation Bar */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #111;
-      z-index: 10;
-      padding: 10px 30px;
-    }
-
-    nav ul {
-      margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: flex-end;
-      list-style: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
     }
-
-    nav li {
-      margin-left: 20px;
-    }
-
-    nav a {
-      color: #fff;
-      font-size: 1.1rem;
+    
+    a {
       text-decoration: none;
-      transition: color 0.3s;
+      color: inherit;
     }
 
-    nav a:hover {
+    nav {
+      background-color: #000;
+      padding: 10px 20px;
+    }
+
+    nav .navbar-brand {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav .nav-link {
+      color: #fff;
+      font-size: 1rem;
+      margin-right: 15px;
+    }
+
+    nav .nav-link:hover {
       color: #00c2ff;
     }
 
-    /* Full-page Sections */
-    section {
-      min-height: 100vh;
+    #home {
+      height: 100vh;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 20px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    /* Home Section */
-    #home {
-      background: #000;
     }
 
     #home h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
     #home p {
-      font-size: 1.5rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
     }
 
     #home a {
-      color: #fff;
-      border: 2px solid #00c2ff;
+      background: #00c2ff;
+      color: white;
       padding: 10px 25px;
-      border-radius: 5px;
+      border-radius: 30px;
       font-size: 1rem;
-      text-transform: uppercase;
-      transition: all 0.3s ease;
+      transition: background 0.3s ease;
     }
 
     #home a:hover {
-      background: #00c2ff;
-      color: #000;
+      background: #005f85;
     }
 
-    /* About Section */
     #about {
-      background: #222;
+      background: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     #about h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      color: #141e30;
     }
 
     #about p {
-      font-size: 1.2rem;
       max-width: 800px;
       margin: 0 auto;
-      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #555;
     }
 
-    /* Contact Section */
     #contact {
-      background: #333;
+      background: #eaf0f1;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     #contact h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      color: #141e30;
     }
 
     #contact form {
       max-width: 600px;
-      width: 100%;
       margin: 0 auto;
+      text-align: left;
     }
 
-    #contact .form-control {
-      background: #444;
-      color: white;
-      border: 1px solid #555;
-      margin-bottom: 15px;
-      border-radius: 5px;
-    }
-
-    #contact .form-control:focus {
-      border-color: #00c2ff;
-      box-shadow: none;
-    }
-
-    #contact button {
-      background: #00c2ff;
-      color: #000;
-      border: none;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    #contact button:hover {
-      background: #008bb5;
-    }
-
-    /* Footer */
     footer {
-      text-align: center;
-      padding: 20px;
       background: #000;
       color: white;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jaspreet Singh Nahal</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <section id="home">
-    <div>
-      <h1>Jaspreet Singh Nahal</h1>
-      <p>A passionate learner and software developer creating meaningful solutions.</p>
-      <a href="Profile.pdf" target="_blank" download="Profile.pdf">View Resume</a>
-    </div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>A passionate learner and software developer</p>
+    <a href="Profile.pdf" target="_blank" download="Profile.pdf">View Resume</a>
   </section>
 
   <section id="about">
-    <div>
-      <h1>About Me</h1>
-      <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree. I am passionate about software development, open-source contributions, and solving real-world problems through technology.</p>
-    </div>
+    <h1>About Me</h1>
+    <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree with a keen interest in software development and open-source contributions.</p>
   </section>
 
   <section id="contact">
-    <div>
-      <h1>Contact Me</h1>
-      <form>
-        <input type="email" class="form-control" placeholder="Your Email Address" required>
-        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+    <h1>Contact Me</h1>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input 
+          type="email" 
+          class="form-control" 
+          id="email" 
+          placeholder="name@example.com" 
+          required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea 
+          class="form-control" 
+          id="message" 
+          rows="4" 
+          placeholder="Your message" 
+          required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Send Message</button>
+    </form>
   </section>
 
   <footer>
     <p>&copy; 2024 Jaspreet Singh Nahal. All Rights Reserved.</p>
   </footer>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+  </script>
 </body>
 </html>
