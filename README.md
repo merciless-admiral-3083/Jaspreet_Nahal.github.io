@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -13,180 +14,195 @@
     /* General Reset */
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
-    
-    a {
-      text-decoration: none;
-      color: inherit;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      scroll-behavior: smooth;
     }
 
     nav {
-      background-color: #000;
-      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #000;
+      z-index: 1000;
+      padding: 15px 30px;
     }
 
-    nav .navbar-brand {
-      font-size: 1.5rem;
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
       color: #fff;
-      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s;
     }
 
-    nav .nav-link {
-      color: #fff;
-      font-size: 1rem;
-      margin-right: 15px;
-    }
-
-    nav .nav-link:hover {
+    nav a:hover {
       color: #00c2ff;
     }
 
-    #home {
-      height: 100vh;
-      background: linear-gradient(135deg, #141e30, #243b55);
-      color: white;
+    section {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px;
+      padding: 0 20px;
+    }
+
+    #home {
+      background: #000;
     }
 
     #home h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    #home p {
-      font-size: 1.2rem;
+      font-size: 3.5rem;
+      font-weight: bold;
       margin-bottom: 20px;
     }
 
+    #home p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
     #home a {
-      background: #00c2ff;
-      color: white;
+      display: inline-block;
+      color: #fff;
+      border: 2px solid #00c2ff;
       padding: 10px 25px;
-      border-radius: 30px;
-      font-size: 1rem;
-      transition: background 0.3s ease;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
     }
 
     #home a:hover {
-      background: #005f85;
+      background: #00c2ff;
+      color: #000;
     }
 
     #about {
-      background: #f5f5f5;
-      padding: 60px 20px;
-      text-align: center;
+      background: #1a1a1a;
     }
 
     #about h1 {
-      margin-bottom: 30px;
-      color: #141e30;
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
 
     #about p {
+      font-size: 1.2rem;
       max-width: 800px;
       margin: 0 auto;
-      font-size: 1.1rem;
-      color: #555;
+      line-height: 1.8;
     }
 
     #contact {
-      background: #eaf0f1;
-      padding: 60px 20px;
-      text-align: center;
+      background: #0f0f0f;
     }
 
     #contact h1 {
-      margin-bottom: 30px;
-      color: #141e30;
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
 
     #contact form {
       max-width: 600px;
-      margin: 0 auto;
+      width: 100%;
       text-align: left;
     }
 
+    #contact .form-control {
+      background: #1a1a1a;
+      color: #fff;
+      border: 1px solid #333;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    #contact .form-control:focus {
+      border-color: #00c2ff;
+      box-shadow: none;
+    }
+
+    #contact button {
+      display: block;
+      width: 100%;
+      background: #00c2ff;
+      color: #000;
+      border: none;
+      padding: 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    #contact button:hover {
+      background: #008bb5;
+    }
+
     footer {
-      background: #000;
-      color: white;
       text-align: center;
       padding: 20px;
+      background: #000;
+      color: #fff;
       font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">Jaspreet Singh Nahal</a>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
   <section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>A passionate learner and software developer</p>
-    <a href="Profile.pdf" target="_blank" download="Profile.pdf">View Resume</a>
+    <h1>Jaspreet Singh Nahal</h1>
+    <p>A passionate learner and software developer with a knack for open-source contributions.</p>
+    <a href="Profile.pdf" target="_blank" download="Profile.pdf">Download Resume</a>
   </section>
 
   <section id="about">
     <h1>About Me</h1>
-    <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree with a keen interest in software development and open-source contributions.</p>
+    <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree in Computer Science. I specialize in building modern web applications, contributing to open-source projects, and learning cutting-edge technologies.</p>
   </section>
 
   <section id="contact">
     <h1>Contact Me</h1>
     <form>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input 
-          type="email" 
-          class="form-control" 
-          id="email" 
-          placeholder="name@example.com" 
-          required />
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea 
-          class="form-control" 
-          id="message" 
-          rows="4" 
-          placeholder="Your message" 
-          required></textarea>
-      </div>
-      <button type="submit" class="btn btn-dark">Send Message</button>
+      <input 
+        type="email" 
+        class="form-control" 
+        placeholder="Your Email Address" 
+        required>
+      <textarea 
+        class="form-control" 
+        rows="4" 
+        placeholder="Your Message" 
+        required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
     <p>&copy; 2024 Jaspreet Singh Nahal. All Rights Reserved.</p>
   </footer>
-
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
-  </script>
 </body>
 </html>
