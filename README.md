@@ -4,37 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jaspreet Singh Nahal</title>
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet">
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <style>
     /* General Reset */
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: white;
       scroll-behavior: smooth;
     }
 
+    /* Navigation Bar */
     nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: #000;
-      z-index: 1000;
-      padding: 15px 30px;
+      background: #111;
+      z-index: 10;
+      padding: 10px 30px;
     }
 
     nav ul {
       margin: 0;
       padding: 0;
-      list-style: none;
       display: flex;
       justify-content: flex-end;
+      list-style: none;
     }
 
     nav li {
@@ -52,22 +48,24 @@
       color: #00c2ff;
     }
 
+    /* Full-page Sections */
     section {
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 0 20px;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
     }
 
+    /* Home Section */
     #home {
       background: #000;
     }
 
     #home h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -79,12 +77,11 @@
     }
 
     #home a {
-      display: inline-block;
       color: #fff;
       border: 2px solid #00c2ff;
       padding: 10px 25px;
-      border-radius: 25px;
-      font-size: 1.2rem;
+      border-radius: 5px;
+      font-size: 1rem;
       text-transform: uppercase;
       transition: all 0.3s ease;
     }
@@ -94,8 +91,9 @@
       color: #000;
     }
 
+    /* About Section */
     #about {
-      background: #1a1a1a;
+      background: #222;
     }
 
     #about h1 {
@@ -110,8 +108,9 @@
       line-height: 1.8;
     }
 
+    /* Contact Section */
     #contact {
-      background: #0f0f0f;
+      background: #333;
     }
 
     #contact h1 {
@@ -122,15 +121,15 @@
     #contact form {
       max-width: 600px;
       width: 100%;
-      text-align: left;
+      margin: 0 auto;
     }
 
     #contact .form-control {
-      background: #1a1a1a;
-      color: #fff;
-      border: 1px solid #333;
-      border-radius: 5px;
+      background: #444;
+      color: white;
+      border: 1px solid #555;
       margin-bottom: 15px;
+      border-radius: 5px;
     }
 
     #contact .form-control:focus {
@@ -139,14 +138,11 @@
     }
 
     #contact button {
-      display: block;
-      width: 100%;
       background: #00c2ff;
       color: #000;
       border: none;
       padding: 10px;
       font-size: 1rem;
-      text-transform: uppercase;
       border-radius: 5px;
       transition: background 0.3s ease;
     }
@@ -155,11 +151,12 @@
       background: #008bb5;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
       background: #000;
-      color: #fff;
+      color: white;
       font-size: 0.9rem;
     }
   </style>
@@ -174,31 +171,29 @@
   </nav>
 
   <section id="home">
-    <h1>Jaspreet Singh Nahal</h1>
-    <p>A passionate learner and software developer with a knack for open-source contributions.</p>
-    <a href="Profile.pdf" target="_blank" download="Profile.pdf">Download Resume</a>
+    <div>
+      <h1>Jaspreet Singh Nahal</h1>
+      <p>A passionate learner and software developer creating meaningful solutions.</p>
+      <a href="Profile.pdf" target="_blank" download="Profile.pdf">View Resume</a>
+    </div>
   </section>
 
   <section id="about">
-    <h1>About Me</h1>
-    <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree in Computer Science. I specialize in building modern web applications, contributing to open-source projects, and learning cutting-edge technologies.</p>
+    <div>
+      <h1>About Me</h1>
+      <p>I am Jaspreet Singh Nahal, currently pursuing a B.Tech degree. I am passionate about software development, open-source contributions, and solving real-world problems through technology.</p>
+    </div>
   </section>
 
   <section id="contact">
-    <h1>Contact Me</h1>
-    <form>
-      <input 
-        type="email" 
-        class="form-control" 
-        placeholder="Your Email Address" 
-        required>
-      <textarea 
-        class="form-control" 
-        rows="4" 
-        placeholder="Your Message" 
-        required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div>
+      <h1>Contact Me</h1>
+      <form>
+        <input type="email" class="form-control" placeholder="Your Email Address" required>
+        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
